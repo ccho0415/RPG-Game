@@ -1,0 +1,84 @@
+-When the game starts, the player will choose a character by clicking on the fighter's picture. The player will fight as that character for the rest of the game.
+  Document Start Up (
+    Set Vars
+    -Each character in the game has 3 attributes: Health Points, Attack Power and Counter Attack Power.
+      HP
+      AP
+      CAP
+    Player chooses character
+      Create clickable items:
+        Char 1
+        Char 2
+        Char 3
+        Char 4
+          Within each Char item:
+            if clicked,
+              assign that char as a "player"; //player stays same for the rest of the game
+              assign other chars as "enemies";
+            start game function
+              -Enemy is moved to a defender area.
+                if character is alive
+
+                  if enemy 1 2 and 3 are alive
+                    give character max health
+                    give enemy 1 max health
+                    place character in character spot
+                    place enemy 1 in enemy spot
+                    -The player will now be able to click the attack button.
+                      function attack()
+                  if enemy 1 is dead
+                    -When the defender's HP is reduced to zero or below, remove the enemy from the defender area. 
+                      move enemy 1 to a hidden div or remove him???
+                    give character max health
+                    give enemy 2 max health
+                    place character in character spot
+                    place enemy 2 in enemy spot
+                   -The player will now be able to click the attack button.
+                      function attack()
+                  if enemy 1 and 2 are dead
+                      -When the defender's HP is reduced to zero or below, remove the enemy from the defender area. 
+                        move enemy 1 to a hidden div or remove him???
+                    give character max health
+                    give enemy 3 max health
+                    place character in character spot
+                    place enemy 3 in enemy spot
+                    -The player will now be able to click the attack button.
+                      function attack()
+                -The player wins the game by defeating all enemy characters.
+                  if enemy 1 2 and 3 are dead
+                    you win
+                -The player loses the game the game if their character's HP falls to zero or below.
+                else
+                  you lose
+      -whenever the player clicks attack, their character damages the defender. 
+        Attack function{
+          specified number - defender's hp
+          -The opponent will lose HP (health points). These points are displayed at the bottom of the defender's picture.  
+          display new hp
+          -The opponent character will instantly counter the attack.
+          specified number - player hp
+          - When that happens, the player's character will lose some of their HP. These points are shown at the bottom of the player character's picture.
+          display new hp
+        }
+ 
+
+-The player will keep hitting the attack button in an effort to defeat their opponent.
+  ?????
+
+
+
+
+// Not sure if I want to change these game mechanics just yet Get First Half working 
+//Each time the player attacks, their character's Attack Power increases by its base Attack Power.
+
+//For example, if the base Attack Power is 6, each attack will increase the Attack Power by 6 (12, 18, 24, 30 and so on).
+//The enemy character only has Counter Attack Power.
+
+//Unlike the player's Attack Points, Counter Attack Power never changes.
+//The Health Points, Attack Power and Counter Attack Power of each character must differ.
+
+//No characters in the game can heal or recover Health Points.
+
+//A winning player must pick their characters wisely by first fighting an enemy with low Counter Attack Power. This will allow them to grind Attack Power and to take //on enemies before they lose all of their Health Points. Healing options would mess with this dynamic.
+//Your players should be able to win and lose the game no matter what character they choose. The challenge should come from picking the right enemies, not choosing 
+//the strongest player.
