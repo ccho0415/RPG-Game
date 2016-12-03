@@ -18,23 +18,22 @@
 	var squirtle = $("#char3");
 	var bulbasaur = $("#char4");
 		$(document).ready(function(){
-			console.log("hi!");
 			$("#char1").on("click", function(){
 				console.log("pika pika")
 				var player = $("#char1");
-				var playerhp = $("#char1hp");
+				var playerhp = char1hp;
 				$("#playerloc").append(player);
 				$("#playerloc").append(playerhp);
 				var enemy1 = $("#char2");
-				var enemy1hp = $("#char2hp");
+				var enemy1hp = char2hp;
 				$("#enemyloc").append(enemy1);
 				$("#enemyloc").append(enemy1hp);
 				var enemy2 = $("#char3");
-				var enemy2hp = $("#char3hp");
+				var enemy2hp = char3hp;
 				$("#enemyloc").append(enemy2);	
 				$("#enemyloc").append(enemy2hp);
 				var enemy3 = $("#char4");
-				var enemy3hp = $("#char4hp");
+				var enemy3hp = char4hp;
 				$("#enemyloc").append(enemy3);
 				$("#enemyloc").append(enemy3hp);
 				if (char1hp > 0 ){
@@ -65,19 +64,19 @@
 			$("#char2").on("click", function(){
 				console.log("charmader char")
 				var player = $("#char2");
-				var playerhp = $("#char2hp");
+				var playerhp = char2hp;
 				$("#playerloc").append(player);
 				$("#playerloc").append(playerhp);
 				var enemy1 = $("#char1");
-				var enemy1hp = $("#char1hp");
+				var enemy1hp = char1hp;
 				$("#enemyloc").append(enemy1);
 				$("#enemyloc").append(enemy1hp);
 				var enemy2 = $("#char3");
-				var enemy2hp = $("#char3hp");
+				var enemy2hp = char3hp;
 				$("#enemyloc").append(enemy2);	
 				$("#enemyloc").append(enemy2hp);
 				var enemy3 = $("#char4");
-				var enemy3hp = $("#char4hp");
+				var enemy3hp = char4hp;
 				$("#enemyloc").append(enemy3);
 				$("#enemyloc").append(enemy3hp);
 				if (char2hp > 0 ){
@@ -104,19 +103,19 @@
 			$("#char3").on("click", function(){
 				console.log("squirtle squirt")
 				var player = $("#char3");
-				var playerhp = $("#char3hp");
+				var playerhp = char3hp;
 				$("#playerloc").append(player);
 				$("#playerloc").append(playerhp);
 				var enemy1 = $("#char1");
-				var enemy1hp = $("#char1hp");
+				var enemy1hp = char1hp;
 				$("#enemyloc").append(enemy1);
 				$("#enemyloc").append(enemy1hp);
 				var enemy2 = $("#char2");
-				var enemy2hp = $("#char2hp");
+				var enemy2hp = char2hp;
 				$("#enemyloc").append(enemy2);	
 				$("#enemyloc").append(enemy2hp);
 				var enemy3 = $("#char4");
-				var enemy3hp = $("#char4hp");
+				var enemy3hp = char4hp;
 				$("#enemyloc").append(enemy3);
 				$("#enemyloc").append(enemy3hp);
 				
@@ -143,19 +142,19 @@
 			$("#char4").on("click", function(){
 				console.log("bul bulbasaur")
 				var player = $("#char4");
-				var playerhp = $("#char4hp");
+				var playerhp = char4hp;
 				$("#playerloc").append(player);
 				$("#playerloc").append(playerhp);
 				var enemy1 = $("#char1");
-				var enemy1hp = $("#char1hp");
+				var enemy1hp = char1hp;
 				$("#enemyloc").append(enemy1);
 				$("#enemyloc").append(enemy1hp);
 				var enemy2 = $("#char2");
-				var enemy2hp = $("#char2hp");
+				var enemy2hp = char2hp;
 				$("#enemyloc").append(enemy2);	
 				$("#enemyloc").append(enemy2hp);
 				var enemy3 = $("#char3");
-				var enemy3hp = $("#char3hp");
+				var enemy3hp = char3hp;
 				$("#enemyloc").append(enemy3);
 				$("#enemyloc").append(enemy3hp);
 				
@@ -198,13 +197,13 @@
 						<div class = "row">
 							<div class = "col-md-offset-4 col-md-4">
 								<img src="assets/images/pikachu.gif" id = "char1"/>
-								<span style = "color : #ffffff" id ="char1hp">100</span>
+								<span style = "color : #ffffff" id ="char1hp"></span>
 								<img src = "assets/images/charmander.gif" id = "char2"/>
-								<span style = "color : #ffffff" id ="char2hp">100</span>
+								<span style = "color : #ffffff" id ="char2hp"></span>
 								<img src = "assets/images/squirtle.gif" id = "char3"/>
-								<span style = "color : #ffffff" id ="char3hp">100</span>
+								<span style = "color : #ffffff" id ="char3hp"></span>
 								<img src = "assets/images/bulbasaur.gif" id = "char4"/>
-								<span style = "color : #ffffff" id ="char4hp">100</span>
+								<span style = "color : #ffffff" id ="char4hp"></span>
 							</div>
 						</div>
 					</div>
