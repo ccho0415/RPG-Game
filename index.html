@@ -12,49 +12,10 @@
 	var char2hp = 100;
 	var char3hp = 100;
 	var char4hp = 100;
-	function attackfunc(){
-		$("#attack").on("click", function(){
-			console.log("attack attack");
-			if ((player = $("#char1")) && (enemy1 = $("#char2")) ){
-				console.log("Pikachu attacked charmander");
-			} 
-			else if ((player = $("#char1")) && (enemy1 = $("#char3")) ){
-				console.log("Pikachu attacked squirtle");
-			} 
-			else if ((player = $("#char1")) && (enemy1 = $("#char4")) ){
-				console.log("Pikachu attacked bulbasaur");
-			}
-			else if ((player = $("#char2")) && (enemy1 = $("#char1")) ){
-				console.log("charmander attacked pikachu");
-			} 
-			else if ((player = $("#char2")) && (enemy1 = $("#char3")) ){
-				console.log("charmander attacked squirtle");
-			} 
-			else if ((player = $("#char2")) && (enemy1 = $("#char4")) ){
-				console.log("charmander attacked bulbasaur");
-			}
-			else if ((player = $("#char3")) && (enemy1 = $("#char1")) ){
-				console.log("squirtle attacked pikachu");
-			} 
-			else if ((player = $("#char3")) && (enemy1 = $("#char2")) ){
-				console.log("squirtle attacked charmander");
-			} 
-			else if ((player = $("#char3")) && (enemy1 = $("#char4")) ){
-				console.log("squirtle attacked bulbasaur");
-			}
-			else if ((player = $("#char4")) && (enemy1 = $("#char1")) ){
-				console.log("Bulbasaur attacked pikachu");
-			} 
-			else if ((player = $("#char4")) && (enemy1 = $("#char2")) ){
-				console.log("Bulbasaur attacked charmander");
-			} 
-			else if ((player = $("#char4")) && (enemy1 = $("#char3")) ){
-				console.log("Bulbasaur attacked squirtle");
-			}   
-
-		})
-	}
-
+	var pikachu = $("#char1");
+	var charmander = $("#char2");
+	var squirtle = $("#char3");
+	var bulbasaur = $("#char4");
 		$(document).ready(function(){
 			console.log("hi!");
 			$("#char1").on("click", function(){
@@ -77,7 +38,22 @@
 				$("#enemyloc").append(enemy3hp);
 				if (char1hp > 0 ){
 					console.log("still healthy!");
-					attackfunc();
+					
+		$("#attack").on("click", function(){
+			console.log("attack attack");
+
+			if (enemy1 = charmander) {
+				console.log("Pikachu attacked charmander");
+			} 
+			else if (enemy1 = squirtle) {
+				console.log("Pikachu attacked squirtle");
+			} 
+			else if (enemy1 = bulbasaur) {
+				console.log("Pikachu attacked bulbasaur");
+			}
+
+		})
+	
 				}else{
 					console.log("you dead");
 				}
@@ -101,7 +77,24 @@
 				var enemy3hp = $("#char4hp");
 				$("#enemyloc").append(enemy3);
 				$("#enemyloc").append(enemy3hp);
-				attackfunc();				
+				if (char1hp > 0 ){
+					console.log("still healthy!");
+				
+		$("#attack").on("click", function(){
+			console.log("attack attack");
+
+		 if (enemy1 = pikachu) {
+				console.log("charmander attacked pikachu");
+			} 
+			else if (enemy1 = squirtle) {
+				console.log("charmander attacked squirtle");
+			} 
+			else if (enemy1 = bulbasaur) {
+				console.log("charmander attacked bulbasaur");
+			}
+		})
+	}
+					
 			});
 			$("#char3").on("click", function(){
 				console.log("squirtle squirt")
@@ -121,7 +114,24 @@
 				var enemy3hp = $("#char4hp");
 				$("#enemyloc").append(enemy3);
 				$("#enemyloc").append(enemy3hp);
-				attackfunc();	
+				
+		if (char1hp > 0 ){
+					console.log("still healthy!");
+		$("#attack").on("click", function(){
+			console.log("attack attack");
+
+			if (enemy1 = pikachu) {
+				console.log("squirtle attacked pikachu");
+			} 
+			else if (enemy1 = charmander) {
+				console.log("squirtle attacked charmander");
+			} 
+			else if (enemy1 = bulbasaur) {
+				console.log("squirtle attacked bulbasaur");
+			}   
+
+		})
+	}	
 			});
 			$("#char4").on("click", function(){
 				console.log("bul bulbasaur")
@@ -141,7 +151,24 @@
 				var enemy3hp = $("#char3hp");
 				$("#enemyloc").append(enemy3);
 				$("#enemyloc").append(enemy3hp);
-				attackfunc();	
+				
+		if (char1hp > 0 ){
+					console.log("still healthy!");
+		$("#attack").on("click", function(){
+			console.log("attack attack");
+
+			if (enemy1 = pikachu){
+				console.log("Bulbasaur attacked pikachu");
+			} 
+			else if (enemy1 = charmander) {
+				console.log("Bulbasaur attacked charmander");
+			} 
+			else if (enemy1 = squirtle){
+				console.log("Bulbasaur attacked squirtle");
+			}   
+
+		})
+	}	
 			});									
 });
 	</script>
