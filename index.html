@@ -5,6 +5,7 @@
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 		<script>
 	var player;
+	// Need new enemy system keep other characters at top and just have 1 enemy
 	var enemy1;
 	var enemy2;
 	var enemy3;
@@ -44,6 +45,7 @@
 
 			if (enemy1 = charmander) {
 				console.log("Pikachu attacked charmander");
+// Got to figure out how to do this logically, original plan does not work
 			} 
 			else if (enemy1 = squirtle) {
 				console.log("Pikachu attacked squirtle");
@@ -51,6 +53,7 @@
 			else if (enemy1 = bulbasaur) {
 				console.log("Pikachu attacked bulbasaur");
 			}
+
 
 		})
 	
@@ -77,7 +80,7 @@
 				var enemy3hp = $("#char4hp");
 				$("#enemyloc").append(enemy3);
 				$("#enemyloc").append(enemy3hp);
-				if (char1hp > 0 ){
+				if (char2hp > 0 ){
 					console.log("still healthy!");
 				
 		$("#attack").on("click", function(){
@@ -93,7 +96,9 @@
 				console.log("charmander attacked bulbasaur");
 			}
 		})
-	}
+	}else{
+					console.log("you dead");
+				}
 					
 			});
 			$("#char3").on("click", function(){
@@ -115,7 +120,7 @@
 				$("#enemyloc").append(enemy3);
 				$("#enemyloc").append(enemy3hp);
 				
-		if (char1hp > 0 ){
+		if (char3hp > 0 ){
 					console.log("still healthy!");
 		$("#attack").on("click", function(){
 			console.log("attack attack");
@@ -131,7 +136,9 @@
 			}   
 
 		})
-	}	
+	}	else{
+					console.log("you dead");
+				}
 			});
 			$("#char4").on("click", function(){
 				console.log("bul bulbasaur")
@@ -152,7 +159,7 @@
 				$("#enemyloc").append(enemy3);
 				$("#enemyloc").append(enemy3hp);
 				
-		if (char1hp > 0 ){
+		if (char4hp > 0 ){
 					console.log("still healthy!");
 		$("#attack").on("click", function(){
 			console.log("attack attack");
@@ -168,7 +175,9 @@
 			}   
 
 		})
-	}	
+	}	else{
+					console.log("you dead");
+				}
 			});									
 });
 	</script>
