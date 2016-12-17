@@ -17,8 +17,10 @@
 	var charmander = $("#char2");
 	var squirtle = $("#char3");
 	var bulbasaur = $("#char4");
+  var audio = new Audio("assets/songs/battle.mp3");
 		$(document).ready(function(){
 			$("#char1").on("click", function(){
+				audio.play();
 				console.log("pika pika")
 				var player = $("#char1");
 				var playerhp = char1hp;
@@ -62,6 +64,7 @@
 
 			});
 			$("#char2").on("click", function(){
+				audio.play();
 				console.log("charmader char")
 				var player = $("#char2");
 				var playerhp = char2hp;
@@ -101,6 +104,7 @@
 					
 			});
 			$("#char3").on("click", function(){
+				audio.play();
 				console.log("squirtle squirt")
 				var player = $("#char3");
 				var playerhp = char3hp;
@@ -140,6 +144,7 @@
 				}
 			});
 			$("#char4").on("click", function(){
+				audio.play();
 				console.log("bul bulbasaur")
 				var player = $("#char4");
 				var playerhp = char4hp;
